@@ -3,6 +3,7 @@ body {
   background-color: #f4f4f4;
   margin: inherit;
   display: flex;
+flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 100vh;
