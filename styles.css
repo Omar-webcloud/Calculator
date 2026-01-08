@@ -1,28 +1,26 @@
 header {
- background-color: transparent;
- align-items: center;
-display: flex;
-justify-content:center ;
-font-size: 18 px;
-font-weight: bold;
-position: fixed;     
-  top: 0;               
-  width: 35%;          
+  color: #364d60;
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size:  30px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
   z-index: 100;
-  margin:center;
+  margin: center;
 }
 
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  margin: inherit;
-  margin-top: 20px;
+  margin: 0;
+  margin-top: 10px;
+  min-height: 100vh;
   display: flex;
-flex-wrap: wrap;
- align-items: center;
-  justify-content: center;
- 
-  height: 100vh;
+  flex-direction: column;
+  align-items: center;
 }
 
 .calculator {
@@ -30,6 +28,8 @@ flex-wrap: wrap;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  
 }
 
 .display {
@@ -67,7 +67,7 @@ flex-wrap: wrap;
 }
 
 .operator {
-  background-color: #4CAF52;
+  background-color: #4caf52;
   color: white;
 }
 
@@ -77,7 +77,7 @@ flex-wrap: wrap;
 
 .equal {
   grid-column: span 4;
-  background-color: #2196F5;
+  background-color: #2196f5;
   color: white;
   font-size: 1.5em;
 }
@@ -93,4 +93,26 @@ flex-wrap: wrap;
 
 #clear:hover {
   background-color: #d32f2f;
+}
+footer{
+  text-align: center; 
+  padding: 30px 0; 
+  background-color: transparent; 
+  font-size: 12px; 
+  margin-top: auto;
+}
+
+@media screen and (max-width:480px){
+.calculator {
+
+  width: 280px;
+  transform: scale(0.9);
+  margin-top: 0px;
+
+}
+header{
+  transform: scale(0.8);
+
+}
+  
 }
